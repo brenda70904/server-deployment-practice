@@ -26,7 +26,7 @@ app.use("*", notFound);
 app.use(errorHandler);
 
 const start = () => {
-    app.listen(3001, () => console.log("server running"))
+    app.listen(process.env.PORT, () => console.log("server running"))
 }
 
 module.exports = { app, start };
