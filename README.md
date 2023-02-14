@@ -1,37 +1,44 @@
-# package.json Notes:
+# LAB - Class 01
 
-## For React Applications
+## Project: Server Deployent Practice
 
- To deploy your application at GitHub pages, you'll need to add a home page property to your package.json which points to the deployed base URL of your GitHub Pages site.
- 
- *NOTE: This will break deployments to other hosting services such as Netlify, Vercel, or AWS Amplify, so if you later wish to deploy there, remove this property completely*
- 
-     {
-       "homepage": "https://yourname.github.io/repository-name"
-     }
+### Author: Brenda 
 
-## Node / Express Applications
+### Problem Domain  
 
-### For Tests
-Your Scripts section should have the following, so that you can easily run tests locally and in your CI
+Basic API Server where we write some middleware and practice deployment
 
-  "scripts": {
-    "start": "node index.js",
-    "lint": "eslint **/*.js",
-    "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
-},
+### Links and Resources
 
+- [GitHub Actions ci/cd](https://github.com/brenda70904/server-deployment-practice/actions)
+- [back-end server url](http://xyz.com) (when applicable)
+- [front-end application](http://xyz.com) (when applicable)
 
-### For NPM Modules
+### Setup
 
-If you are creating a module to deploy at NPM, you'll want a "bin" section that identifies the name of the global command to run and your .js file that runs when called.
+#### `.env` requirements (where applicable)
 
-"bin": {
-    "fetch": "index.js"
-}
+not reqire for this lab, wait for tomorrow
 
-Additionally, that file should have as it's first line, so that it'll run without having to type "node filename.js" every time
+#### How to initialize/run your application (where applicable)
 
-#!/usr/bin/env node
+- e.g. `npm start`
 
+#### How to use your library (where applicable)
+
+#### Features / Routes
+
+- Feature One: Deploy Dev
+
+#### Tests
+
+- How do you run tests?
+to run the test, use `npm test`
+- Any tests of note?
+N/A
+- Describe any tests that you did not complete, skipped, etc
+Completed.
+
+#### UML
+
+![lab01_UML](./assets/lab-01uml.jpg)
