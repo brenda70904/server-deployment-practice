@@ -4,7 +4,7 @@ const express = require("express");
 const logger = require("./middleware/logger.js");
 const notFound = require("./handlers/404.js");
 const errorHandler = require("./handlers/500.js");
-
+const PORT = process.env.PORT || 3001;
 
 
 const app = express();
@@ -26,7 +26,7 @@ app.use("*", notFound);
 app.use(errorHandler);
 
 const start = () => {
-    app.listen(process.env.PORT, () => console.log("server running"))
+    app.listen(PORT, () => console.log("server running"))
 }
 
 module.exports = { app, start };
